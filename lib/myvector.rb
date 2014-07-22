@@ -6,6 +6,10 @@ class My_Vector < Vector
   end
 
   def self.pathlength(*vectors)
-    
+
+  end
+
+  def add_int_vec(v, x)
+    v + x
   end
 end
