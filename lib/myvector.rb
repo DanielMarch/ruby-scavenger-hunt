@@ -1,16 +1,11 @@
+require 'matrix'
+
 class My_Vector < Vector
-
-  attr_reader :x1, :y1, :x2, :y2, :distance
-
-  def initialize(a, b, x, y)
-    @x1 = a.to_i
-    @y1 = b.to_i
-    @x2 = x.to_i
-    @y2 = y.to_i
+  def distance(v)
+    Math.sqrt((self[0]-v[0])**2+(self[1]-v[1])**2)
   end
 
-  def distance
-    @distance = Math.sqrt(((x2 - x1) * 2) + ((y2 - y1) * 2))
-    return distance
+  def self.pathlength(*vectors)
+    
   end
 end
