@@ -31,8 +31,6 @@ class VectorTest < MiniTest::Unit::TestCase
     assert_respond_to @v, :,,
     assert_equal MyVector[1,2,4], @v <<4
   end
-
-  
 end
 
 # require_relative '../lib/myvector.rb'
